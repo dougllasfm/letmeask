@@ -14,7 +14,6 @@ Letmeask é uma aplicação full stack web contruída durante a Next Level Week 
 - ReactJS
 - TypeScript
 - Firebase
-- 
 # Como executar o projeto
 
 ```bash
