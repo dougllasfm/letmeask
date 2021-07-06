@@ -152,6 +152,23 @@
   }
 }
 
+@media (max-width: 615px) {
+  .container-fluid {
+    #page-auth {
+      aside {
+        p {
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+
+    .create-room {
+      padding: 0.8rem;
+    }
+  }
+}
+
 @media (max-width: 575px) {
   .container-fluid {
     #page-auth {
