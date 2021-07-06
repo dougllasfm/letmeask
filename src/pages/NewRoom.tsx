@@ -9,6 +9,7 @@ import { database } from '../services/firebase';
 import { useAuth } from '../hooks/useAuth';
 
 import '../styles/auth.scss';
+import { Col, Container } from 'react-bootstrap';
 
 export function NewRoom() {
   const { user } = useAuth()
@@ -33,12 +34,15 @@ export function NewRoom() {
   }
 
   return (
+    <Container fluid>
     <div id="page-auth">
+      <Col xs={12} sm={6}>
       <aside>
         <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
         <strong>Crie salas de Q&amp;A ao-vivo</strong>
         <p>Tire as dúvidas da sua audiência em tempo-real</p>
-      </aside>
+      </aside></Col>
+      <Col xs={12} sm={6}>
       <main>
         <div className="main-content">
           <img src={logoImg} alt="Letmeask" />
@@ -59,6 +63,8 @@ export function NewRoom() {
           </p>
         </div>
       </main>
+      </Col>
     </div>
+    </Container>
   )
 }

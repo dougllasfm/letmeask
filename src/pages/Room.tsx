@@ -1,4 +1,5 @@
 import { FormEvent, useState } from 'react';
+import { Col, Container } from 'react-bootstrap';
 import { useParams } from 'react-router-dom'
 
 import logoImg from '../assets/images/logo.svg';
@@ -61,7 +62,7 @@ export function Room() {
 
   }
 
-  return (
+  return (    
     <div id="page-room">
       <header>
         <div className="content">
@@ -69,7 +70,8 @@ export function Room() {
           <RoomCode code={roomId} />
         </div>
       </header>
-
+      <Container fluid>
+      <Col xs={12} sm={12}>
       <main>
         <div className="room-title">
           <h1>Sala {title}</h1>
@@ -126,6 +128,9 @@ export function Room() {
         </div>
 
       </main>
+      </Col>
+      </Container>
     </div>
+    
   );
 }
