@@ -54,14 +54,14 @@ export function Home() {
   return (
     <Container fluid>
         <div id="page-auth" className={theme}>
-          <Col xs={12} sm={6}>
+          <Col xs={12} sm={5}>
             <aside>
               <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
               <strong>Crie salas de Q&amp;A ao-vivo</strong>
               <p>Tire as dúvidas da sua audiência em tempo-real</p>
             </aside>
           </Col>
-          <Col xs={12} sm={6}>
+          <Col xs={12} sm={7}>
             <main>
               <div className="main-content">
                 {/* <button onClick={toggleTheme}>Trocar</button> */}
